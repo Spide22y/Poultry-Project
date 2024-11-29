@@ -1,0 +1,9 @@
+// script.js
+
+// Show "Thank you" message after form submission
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission to show the message first
+    const thankYouMessage = document.getElementById("thank-you-message");
+    thankYouMessage.style.display = "block"; // Show the thank you message
+    document.getElementById("contact-form").reset(); // Reset the form
+});

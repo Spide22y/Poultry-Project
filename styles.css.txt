@@ -1,0 +1,113 @@
+/* styles.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    background: linear-gradient(45deg, #00796b, #004d40);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Button Hover Effects */
+.btn {
+    padding: 10px 20px;
+    background: #00796b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #004d40;
+    transform: scale(1.05);
+}
+
+/* QR Code Style */
+.qr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#qr-code {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #00796b;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#qr-code:hover {
+    transform: scale(1.1);
+}
+
+/* Hidden Thank You Message */
+#thank-you-message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00796b;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
